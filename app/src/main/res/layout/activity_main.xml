@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Welcome to Hotel "
+        android:textAlignment="center"
+        android:padding="20dp"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:id="@+id/etname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your name"
+        android:padding="20dp"
+        android:textStyle="bold"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:textSize="15dp"/>
+
+    <TextView
+        android:id="@+id/etCheckin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="CheckIn"
+        android:textStyle="bold"
+        android:padding="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:textSize="15dp"/>
+    <TextView
+        android:id="@+id/etCheckOut"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="CheckOut"
+        android:padding="20dp"
+        android:layout_marginRight="10dp"
+        android:textStyle="bold"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:textSize="15dp"/>
+    <Spinner
+        android:id="@+id/spCountry"
+        android:layout_gravity="left"
+        android:padding="20dp"
+        android:text="Select your country"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <Spinner
+        android:id="@+id/spRoom"
+        android:layout_gravity="left"
+        android:padding="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_weight="1"
+            android:text="Adults"
+            android:textSize="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_weight="1"
+            android:text="Children"
+            android:textSize="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_weight="1"
+            android:text="Room"
+            android:textSize="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/etAdults"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:id="@+id/etChildren"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:id="@+id/etRoom"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calculate"
+        android:id="@+id/btCalculate"
+        android:textStyle="bold"
+        android:background="#ffffff"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"/>
+
+
+    <TextView
+        android:id="@+id/etResults"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_width="300dp"
+        android:textSize="15dp"
+        android:textAlignment="center"
+        android:layout_marginLeft="50dp"
+        android:layout_height="wrap_content"></TextView>
+
+</LinearLayout>
